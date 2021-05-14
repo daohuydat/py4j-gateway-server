@@ -1,0 +1,41 @@
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+*/target/
+/target/
+/rpm/rpm-engine/target/
+/rpm/rpm-ui/target/
+/vis/target/
+dist/
+*package-lock.json
+*npm/
+
+#Version
+*/**/version.txt
+/ui/target/
+
+#eclpise
+.project
+.settings
+.classpath
+version.txt
+
+# IntelliJ project files 
+*.iml
+*.iws
+*.ipr
+.idea/
+
+# Netbeans
+*nb-configuration.xml
+*nbactions.xml
+*.local.conf
