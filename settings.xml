@@ -3,17 +3,25 @@
           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
                               http://maven.apache.org/xsd/settings-1.0.0.xsd">
 
-    <repositories>
-        <repository>
-            <id>maven2</id>
-            <name>maven2</name>
-            <url>https://repo.maven.apache.org/maven2</url>
-        </repository>
-        <repository>
-            <id>xwiki</id>
-            <name>xwiki</name>
-            <url>https://maven.xwiki.org/externals/</url>
-        </repository>
-    </repositories>
-    
+    <profiles>
+        <profile>
+            <id>main</id>
+            <repositories>
+                <repository>
+                    <id>maven2</id>
+                    <name>maven2</name>
+                    <url>https://repo.maven.apache.org/maven2</url>
+                </repository>
+                <repository>
+                    <id>xwiki</id>
+                    <name>xwiki</name>
+                    <url>https://maven.xwiki.org/externals/</url>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+
+    <activeProfiles>
+		<activeProfile>main</activeProfile>
+    </activeProfiles>
 </settings>
